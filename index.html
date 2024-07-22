@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="flex">
+        <nav>
+            <div class="w-16 h-screen bg-[#1F1F1F] flex flex-col gap-6 items-center">
+                <div class="p-1 flex justify-evenly gap-1">
+                    <div class="w-3 h-3 rounded-full bg-[#FF5F57]"></div>
+                    <div class="w-3 h-3 rounded-full bg-[#FEBC30]"></div>
+                    <div class="w-3 h-3 rounded-full bg-[#28C841]"></div>
+                </div>
+                <span class="material-symbols-outlined text-[#777] hover:text-[#949494] cursor-pointer">
+                    person
+                </span>
+                <span class="material-symbols-outlined text-[#DFDFDF] cursor-pointer">
+                    chat
+                </span>
+                <span class="material-symbols-outlined text-[#777] hover:text-[#949494] cursor-pointer">
+                    person_add
+                </span>
+                <span class="material-symbols-outlined text-[#777] hover:text-[#949494] cursor-pointer">
+                    play_arrow
+                </span>
+                <span class="material-symbols-outlined text-[#777] hover:text-[#949494] cursor-pointer">
+                    view_timeline
+                </span>
+                <span class="material-symbols-outlined text-[#777] hover:text-[#949494] cursor-pointer">
+                    meeting_room
+                </span>
+                <span class="material-symbols-outlined text-[#777] hover:text-[#949494] cursor-pointer">
+                    credit_card
+                </span>
+            </div>
+        </nav>
+        <main class="grow h-screen bg-[#2D2E30] flex">
+            <div class="w-full h-12 border-b border-[#37383A] flex gap-4 text-[#777] px-3 text-[13px]">
+                <div class="h-full flex items-center text-white border-b border-white cursor-pointer">All</div>
+                <div class="h-full flex items-center cursor-pointer">Friends</div>
+                <div class="h-full flex items-center cursor-pointer">Groups</div>
+                <div class="h-full flex items-center cursor-pointer">OpenChats</div>
+                <div class="h-full flex items-center cursor-pointer">Official accounts</div>
+                <span class="material-symbols-outlined flex items-center cursor-pointer h-full text-[#B7B7B7] text-base">
+                    tune
+                </span>
+            </div>
+            <div class="flex grow">
+                <div class="h-screen w-20 border-r border-[#37383A]"></div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
