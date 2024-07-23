@@ -12,7 +12,7 @@
 <body>
     <div class="flex">
         <nav>
-            <div class="w-16 h-screen bg-[#1F1F1F] flex flex-col gap-6 items-center">
+            <div class="w-14 h-screen bg-[#1F1F1F] flex flex-col gap-6 items-center">
                 <div class="p-1 flex justify-evenly gap-1">
                     <div class="w-3 h-3 rounded-full bg-[#FF5F57]"></div>
                     <div class="w-3 h-3 rounded-full bg-[#FEBC30]"></div>
@@ -53,7 +53,7 @@
                 </span>
             </div>
             <div class="flex overflow-hidden">
-                <div class="h-full w-[300px] border-r border-[#37383A] py-3 flex flex-col gap-3">
+                <div class="h-full w-[500px] border-r border-[#37383A] py-3 flex flex-col gap-3">
                     <div class="flex items-center gap-2 px-2">
                         <div class="bg-[#4A4A4A] py-1 flex items-center rounded-md px-2 gap-2 grow">
                             <span class="material-symbols-outlined text-[#949494] text-base">
@@ -66,7 +66,7 @@
                         </span>
                     </div>
                     <div id="chat-scroll" class="overflow-y-scroll">
-                        <div id="chat" class="hover:bg-[#343536] py-1.5 px-2.5 cursor-pointer flex gap-2">
+                        <div id="chatbox" class="hover:bg-[#343536] py-1.5 px-2.5 cursor-pointer flex gap-2">
                             <div class="bg-[#4A4A4A] w-14 h-14 rounded-full"></div>
                             <div class="flex flex-col grow">
                                 <span class="text-white text-sm">Kritarat Moonmanee</span>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col grow">
-                    <div class="bg-[#2D2E30] w-full h-14 flex items-center px-3 justify-between">
+                    <div class="bg-[#2D2E30] w-full h-14 flex items-center px-3 justify-between shrink-0">
                         <div class="flex gap-2">
                             <span class="text-white text-sm">Kritarat Moonmanee</span>
                             <span class="material-symbols-outlined text-sm text-white">
@@ -99,11 +99,23 @@
                             </span>
                         </div>
                     </div>
-                    <div class="grow bg-white"></div>
+                    <div id="chat" class="grow overflow-y-scroll px-2">
+                        <div id="message" class="py-2 flex gap-2">
+                            <div>
+                                <div class="h-10 w-10 rounded-full bg-[#4A4A4A]"></div>
+                            </div>
+                            <div class="w-full bg-[#555] min-h-10 h-fit rounded-[20px] text-white px-3 py-2 text-sm">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae qui in repellendus odit voluptate animi rerum, dolorum, id laboriosam provident distinctio tenetur fugit, nobis repudiandae blanditiis sit expedita incidunt laborum?  
+                            </div>
+                            <div class="flex flex-col justify-end">
+                                <span class="text-nowrap text-xs text-[#767778]">7:36 PM</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="bg-[#2D2E30] border-t border-[#37383A] h-40 flex flex-col">
                         <textarea type="text" class="bg-transparent outline-none grow w-full text-white text-sm p-3" placeholder="Enter a message"></textarea>
                         <div class="w-full text-[#C1C1C1] flex justify-between items-center py-2 px-3">
-                            <div class="flex gap-1">
+                            <div class="flex gap-2">
                                 <span class="material-symbols-outlined cursor-pointer text-xl">
                                     link
                                 </span>
