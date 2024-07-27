@@ -73,7 +73,7 @@
                 </span>
             </div>
             <div class="flex overflow-hidden">
-                <div class="h-full w-[500px] border-r border-[#37383A] py-3 flex flex-col gap-3">
+                <div class="h-full min-w-[350px] border-r border-[#37383A] py-3 flex flex-col gap-3">
                     <div class="flex items-center gap-2 px-2">
                         <div class="bg-[#4A4A4A] py-1 flex items-center rounded-md px-2 gap-2 grow">
                             <span class="material-symbols-outlined text-[#949494] text-base">
@@ -86,7 +86,7 @@
                         </span>
                     </div>
                     <div id="chat-scroll" class="overflow-y-scroll">
-                        <div id="chatbox" class="hover:bg-[#343536] py-1.5 px-2.5 cursor-pointer flex gap-2" onclick="$('#chat-scroll').children().removeClass('bg-[#343536]'); $(this).addClass('bg-[#343536]');">
+                        <div id="chatbox" class="hover:bg-[#343536] py-1.5 px-2.5 cursor-pointer flex gap-2" onclick="$('#chat-scroll').children().removeClass('bg-[#343536]'); $(this).addClass('bg-[#343536]'); load__chat_history();">
                             <div>
                                 <div class="bg-[#4A4A4A] w-14 h-14 rounded-full"></div>
                             </div>

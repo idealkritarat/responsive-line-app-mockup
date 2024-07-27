@@ -14,15 +14,20 @@ const messageGroup = $("#message-group");
 const words =["The sky", "above", "the port","was", "the color of television", "tuned", "to", "a dead channel", ".", "All", "this happened", "more or less","." ,"I", "had", "the story", "bit by bit", "from various people", "and", "as generally", "happens", "in such cases", "each time", "it", "was", "a different story","." ,"It", "was", "a pleasure", "to", "burn"];
 let time = [7,36];
 
-
-n = 20;
-while(n--){
-    const messageClone = $(messageGroup).clone();
-    let wrapped_message__count = Math.floor(Math.random() * 3) + 1;
-    while(wrapped_message__count--)$(messageClone).find("#message-wrapper").append(new__messageBox());
-    $(messageClone).find("#message-wrapper").children().eq(-1).append(new__timestamp());
-    $(chat).append(messageClone);
+function load__chat_history(){
+    n = 20;
+    $(chat).html("");
+    while(n--){
+        const messageClone = $(messageGroup).clone();
+        let wrapped_message__count = Math.floor(Math.random() * 3) + 1;
+        while(wrapped_message__count--)$(messageClone).find("#message-wrapper").append(new__messageBox());
+        $(messageClone).find("#message-wrapper").children().eq(-1).append(new__timestamp());
+        $(chat).append(messageClone);
+    }
 }
+
+load__chat_history();
+
 
 $(messageGroup).find("#message-wrapper").append(new__messageBox());
 
